@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Olami - About</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+header{
+text-align:center;
+padding:60px 20px;
+animation:fadeDown 1.5s ease;
+}
+
+header h1{
+font-size:48px;
+letter-spacing:2px;
+background:linear-gradient(90deg,#00f2fe,#4facfe);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.8;
+}
+
+section{
+padding:60px 10%;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+}
+
+.text{
+flex:1;
+animation:fadeLeft 1.5s ease;
+}
+
+.text h2{
+margin-bottom:15px;
+font-size:32px;
+color:#4facfe;
+}
+
+.text p{
+opacity:0.9;
+}
+
+.image{
+flex:1;
+text-align:center;
+animation:fadeRight 1.5s ease;
+}
+
+.image img{
+width:90%;
+max-width:400px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+transition:0.5s;
+}
+
+.image img:hover{
+transform:scale(1.05);
+}
+
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.7;
+font-size:14px;
+}
+
+@keyframes fadeDown{
+from{opacity:0;transform:translateY(-40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes fadeLeft{
+from{opacity:0;transform:translateX(-50px)}
+to{opacity:1;transform:translateX(0)}
+}
+
+@keyframes fadeRight{
+from{opacity:0;transform:translateX(50px)}
+to{opacity:1;transform:translateX(0)}
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border-radius:10px;
+overflow:hidden;
+}
+
+th,td{
+padding:15px;
+text-align:left;
+}
+
+th{
+background:#00e5ff;
+color:#000;
+}
+
+tr:nth-child(even){
+background:rgba(255,255,255,0.05);
+}
+
+tr:hover{
+background:rgba(255,255,255,0.1);
+}
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px;
+text-align:center;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+position:relative;
+transition:0.3s;
+}
+
+/* hover underline animation */
+
+nav a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#00f7ff;
+left:0;
+bottom:-5px;
+transition:0.4s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+</style>
+</head>
+
+<body>
+    <nav>
+<a href="index.html" style="text-decoration: none; color: #00f2fe;">Home</a>
+<a href="about.html" style="text-decoration: none; color: #00f2fe;">About</a>
+<a href="gallery.html" style="text-decoration: none; color: #00f2fe;">Gallery</a>
+<a href="Contact.html" style="text-decoration: none; color: #00f2fe;">Contact</a>
+</nav>
+<header>
+<h1>AI Olami</h1>
+<p>Sun’iy Intellekt dunyosiga sayohat</p>
+
+</header>
+
+<section>
+
+<div class="text">
+<h2>Sun’iy Intellekt Nima?</h2>
+<p>
+Sun’iy intellekt (AI) — bu kompyuterlar va dasturlar inson kabi
+o‘ylash, o‘rganish va qaror qabul qilish qobiliyatiga ega bo‘lishini
+ta'minlaydigan texnologiya hisoblanadi.
+
+AI bugungi kunda tibbiyot, robototexnika, avtomobil sanoati,
+ta'lim, moliya va boshqa ko‘plab sohalarda qo‘llanilmoqda.
+</p>
+</div>
+
+<div class="image">
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+</div>
+
+</section>
+
+<section>
+
+<div class="image">
+<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+</div>
+
+<div class="text">
+<h2>AI Tarixi</h2>
+<p>
+Sun’iy intellekt g‘oyasi 1950-yillarda paydo bo‘lgan.
+Olimlar kompyuterlarni inson fikrlashiga yaqinlashtirish
+ustida ishlashni boshlashdi.
+
+1956-yilda AI atamasi rasmiy ravishda ilmiy soha sifatida
+qabul qilingan. Bugungi kunda esa AI texnologiyalari
+neyral tarmoqlar va katta ma'lumotlar yordamida
+juda tez rivojlanmoqda.
+</p>
+</div>
+
+</section>
+<table>
+
+<tr>
+<th>Texnologiya</th>
+<th>Tavsif</th>
+<th>Qo'llanilishi</th>
+</tr>
+
+<tr>
+<td>Machine Learning</td>
+<td>Kompyuterlarning ma'lumotlardan o‘rganish usuli</td>
+<td>Rekomendatsiya tizimlari</td>
+</tr>
+
+<tr>
+<td>Natural Language Processing</td>
+<td>Kompyuterlarning inson tilini tushunishi</td>
+<td>Chatbot va tarjima tizimlari</td>
+</tr>
+
+<tr>
+<td>Computer Vision</td>
+<td>Rasm va videoni tahlil qilish texnologiyasi</td>
+<td>Yuzni tanish tizimlari</td>
+</tr>
+
+<tr>
+<td>Robotics</td>
+<td>AI bilan boshqariladigan robot tizimlari</td>
+<td>Avtomatlashtirilgan ishlab chiqarish</td>
+</tr>
+
+<tr>
+<td>Neural Networks</td>
+<td>Inson miyasi asosida yaratilgan hisoblash tizimi</td>
+<td>Deep Learning modellari</td>
+</tr>
+
+</table>
+<footer>
+© 2026 AI Olami | Designed By Botirjon
+</footer>
+
+
+
+</body>
+</html>
